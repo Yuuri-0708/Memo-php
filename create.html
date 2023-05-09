@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo - 新規</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header wrapper">
+        <h1 class="page-title header__title">Memo(新規メモ)</h1>
+        <p>
+            <a href="/Memo" class="header__link">→一覧へ戻る</a>
+        </p>
+    </header>
+    <div class="memo-create wrapper">
+        <form action="create_do.php" method="post" class="memo-create__form">
+            <label for="title">タイトル</label>
+            <input class="memo-create__title" type="text" name="title" id="title" placeholder="メモのタイトルを入力してください">
+            <label for="document">内容</label>
+            <textarea class="memo-create__doc" name="document" id="document" placeholder="メモの内容を入力してください"></textarea>
+            <button type="submit" class="memo-create__btn">メモを登録する</button>
+        </form>
+    </div>
+</body>
+</html>
